@@ -23,7 +23,6 @@ public class SocketServer {
                 }
             }).start();
             //handler(socket);
-
         }
     }
 

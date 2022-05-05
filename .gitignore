@@ -1,4 +1,8 @@
+# 忽略.idea目录
+.idea
+
 *.class
 *.log
 *.jar
 *.war
+

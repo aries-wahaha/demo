@@ -1,6 +1,5 @@
 package com.example.netty.splitpacket;
 
-import com.example.netty.splitpacket.MyMessageProtocol;
 import io.netty.channel.ChannelHandlerContext;
 import io.netty.channel.SimpleChannelInboundHandler;
 import io.netty.util.CharsetUtil;

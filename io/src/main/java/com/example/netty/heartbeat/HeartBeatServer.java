@@ -34,7 +34,7 @@ public class HeartBeatServer {
                             //会触发IdleStateEvent事件并且交给下一个handler处理，下一个handler必须
                             //实现userEventTriggered方法处理对应事件
                             pipeline.addLast(new IdleStateHandler(3, 0, 0, TimeUnit.SECONDS));
-                            pipeline.addLast(new com.tuling.netty.heartbeat.HeartBeatServerHandler());
+                            pipeline.addLast(new HeartBeatServerHandler());
                         }
                     });
             System.out.println("netty server start。。");

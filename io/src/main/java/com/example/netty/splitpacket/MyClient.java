@@ -21,8 +21,8 @@ public class MyClient {
                         @Override
                         protected void initChannel(SocketChannel ch) throws Exception {
                             ChannelPipeline pipeline = ch.pipeline();
-                            pipeline.addLast(new com.tuling.netty.splitpacket.MyMessageEncoder());
-                            pipeline.addLast(new com.tuling.netty.splitpacket.MyClientHandler());
+                            pipeline.addLast(new MyMessageEncoder());
+                            pipeline.addLast(new MyClientHandler());
                         }
                     });
 

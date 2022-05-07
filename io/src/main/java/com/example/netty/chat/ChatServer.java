@@ -27,7 +27,7 @@ public class ChatServer {
                             pipeline.addLast("decoder", new StringDecoder());
                             //向pipeline加入编码器
                             pipeline.addLast("encoder", new StringEncoder());
-                            pipeline.addLast(new com.tuling.netty.chat.ChatServerHandler());
+                            pipeline.addLast(new ChatServerHandler());
                             //加入自己的业务处理handler
                         }
                     });

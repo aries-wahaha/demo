@@ -24,7 +24,7 @@ public class ChatClient {
                             pipeline.addLast(new StringEncoder());
                             pipeline.addLast(new StringDecoder());
 
-                            pipeline.addLast(new com.tuling.netty.chat.ChatClientHandler());
+                            pipeline.addLast(new ChatClientHandler());
                         }
                     });
             ChannelFuture channelFuture = bootstrap.connect("127.0.0.1", 9000).sync();

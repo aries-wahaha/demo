@@ -4,14 +4,14 @@ import io.netty.channel.ChannelHandlerContext;
 import io.netty.channel.SimpleChannelInboundHandler;
 import io.netty.util.CharsetUtil;
 
-public class MyClientHandler extends SimpleChannelInboundHandler<com.tuling.netty.splitpacket.MyMessageProtocol> {
+public class MyClientHandler extends SimpleChannelInboundHandler<MyMessageProtocol> {
 
     @Override
     public void channelActive(ChannelHandlerContext ctx) throws Exception {
         for(int i = 0; i< 200; i++) {
             String msg = "你好，我是张三！";
             //创建协议包对象
-            com.tuling.netty.splitpacket.MyMessageProtocol messageProtocol = new com.tuling.netty.splitpacket.MyMessageProtocol();
+           MyMessageProtocol messageProtocol = new MyMessageProtocol();
             messageProtocol.setLen(msg.getBytes(CharsetUtil.UTF_8).length);
             messageProtocol.setContent(msg.getBytes(CharsetUtil.UTF_8));
             ctx.writeAndFlush(messageProtocol);
@@ -19,7 +19,7 @@ public class MyClientHandler extends SimpleChannelInboundHandler<com.tuling.nett
     }
 
     @Override
-    protected void channelRead0(ChannelHandlerContext ctx, com.tuling.netty.splitpacket.MyMessageProtocol msg) throws Exception {
+    protected void channelRead0(ChannelHandlerContext ctx, MyMessageProtocol msg) throws Exception {
 
     }
 

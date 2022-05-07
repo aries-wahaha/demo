@@ -30,7 +30,7 @@ public class MyMessageDecoder extends ByteToMessageDecoder {
                 in.readBytes(content);
 
                 //封装成MyMessageProtocol对象，传递到下一个handler业务处理
-                com.tuling.netty.splitpacket.MyMessageProtocol messageProtocol = new com.tuling.netty.splitpacket.MyMessageProtocol();
+                MyMessageProtocol messageProtocol = new MyMessageProtocol();
                 messageProtocol.setLen(length);
                 messageProtocol.setContent(content);
                 out.add(messageProtocol);

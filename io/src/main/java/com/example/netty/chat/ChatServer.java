@@ -1,4 +1,4 @@
-package com.tuling.netty.chat;
+package com.example.netty.chat;
 
 import io.netty.bootstrap.ServerBootstrap;
 import io.netty.channel.*;
@@ -27,7 +27,7 @@ public class ChatServer {
                             pipeline.addLast("decoder", new StringDecoder());
                             //向pipeline加入编码器
                             pipeline.addLast("encoder", new StringEncoder());
-                            pipeline.addLast(new ChatServerHandler());
+                            pipeline.addLast(new com.tuling.netty.chat.ChatServerHandler());
                             //加入自己的业务处理handler
                         }
                     });

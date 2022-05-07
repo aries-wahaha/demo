@@ -1,5 +1,7 @@
-package com.tuling.netty.codec;
+package com.example.netty.codec;
 
+import com.example.netty.codec.ByteToLongDecoder;
+import com.example.netty.codec.LongToByteEncoder;
 import io.netty.bootstrap.ServerBootstrap;
 import io.netty.channel.ChannelFuture;
 import io.netty.channel.ChannelInitializer;

@@ -1,4 +1,4 @@
-package com.tuling.netty.chat;
+package com.example.netty.chat;
 
 import io.netty.channel.Channel;
 import io.netty.channel.ChannelHandlerContext;

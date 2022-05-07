@@ -1,9 +1,12 @@
-package com.tuling.netty.base;
+package com.example.netty.base;
 
 import io.netty.buffer.ByteBuf;
 import io.netty.buffer.Unpooled;
 import io.netty.util.CharsetUtil;
 
+/**
+ * @author l
+ */
 public class NettyByteBuf {
     public static void main(String[] args) {
         // 创建byteBuf对象，该对象内部包含一个字节数组byte[10]

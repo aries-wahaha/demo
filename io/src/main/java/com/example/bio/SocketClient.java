@@ -1,4 +1,4 @@
-package com.tuling.bio;
+package com.example.bio;
 
 import java.io.IOException;
 import java.net.Socket;

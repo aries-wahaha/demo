@@ -1,5 +1,4 @@
-package com.tuling.netty.splitpacket;
-
+package com.example.netty.splitpacket;
 
 import io.netty.bootstrap.ServerBootstrap;
 import io.netty.channel.ChannelFuture;

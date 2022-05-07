@@ -1,4 +1,4 @@
-package com.tuling.netty.base;
+package com.example.netty.base;
 
 import io.netty.bootstrap.Bootstrap;
 import io.netty.channel.ChannelFuture;

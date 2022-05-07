@@ -1,5 +1,4 @@
-package com.tuling.netty.splitpacket;
-
+package com.example.netty.splitpacket;
 
 import io.netty.bootstrap.Bootstrap;
 import io.netty.channel.ChannelFuture;
@@ -22,8 +21,8 @@ public class MyClient {
                         @Override
                         protected void initChannel(SocketChannel ch) throws Exception {
                             ChannelPipeline pipeline = ch.pipeline();
-                            pipeline.addLast(new MyMessageEncoder());
-                            pipeline.addLast(new MyClientHandler());
+                            pipeline.addLast(new com.tuling.netty.splitpacket.MyMessageEncoder());
+                            pipeline.addLast(new com.tuling.netty.splitpacket.MyClientHandler());
                         }
                     });
 

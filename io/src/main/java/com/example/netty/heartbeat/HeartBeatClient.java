@@ -1,4 +1,4 @@
-package com.tuling.netty.heartbeat;
+package com.example.netty.heartbeat;
 
 import io.netty.bootstrap.Bootstrap;
 import io.netty.channel.*;

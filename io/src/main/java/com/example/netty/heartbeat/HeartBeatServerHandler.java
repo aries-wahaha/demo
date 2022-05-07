@@ -1,4 +1,4 @@
-package com.tuling.netty.heartbeat;
+package com.example.netty.heartbeat;
 
 import io.netty.channel.ChannelHandlerContext;
 import io.netty.channel.SimpleChannelInboundHandler;

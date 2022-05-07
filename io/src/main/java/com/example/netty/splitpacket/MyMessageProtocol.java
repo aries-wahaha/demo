@@ -1,5 +1,4 @@
-package com.tuling.netty.splitpacket;
-
+package com.example.netty.splitpacket;
 
 /**
  * 自定义协议包

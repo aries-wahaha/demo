@@ -1,4 +1,4 @@
-package com.tuling.netty.directbuffer;
+package com.example.netty.directbuffer;
 
 import java.nio.ByteBuffer;
 

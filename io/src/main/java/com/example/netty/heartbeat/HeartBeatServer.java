@@ -1,4 +1,4 @@
-package com.tuling.netty.heartbeat;
+package com.example.netty.heartbeat;
 
 import io.netty.bootstrap.ServerBootstrap;
 import io.netty.channel.ChannelFuture;
@@ -13,6 +13,7 @@ import io.netty.handler.codec.string.StringEncoder;
 import io.netty.handler.timeout.IdleStateHandler;
 
 import java.util.concurrent.TimeUnit;
+
 
 public class HeartBeatServer {
 
@@ -33,7 +34,7 @@ public class HeartBeatServer {
                             //会触发IdleStateEvent事件并且交给下一个handler处理，下一个handler必须
                             //实现userEventTriggered方法处理对应事件
                             pipeline.addLast(new IdleStateHandler(3, 0, 0, TimeUnit.SECONDS));
-                            pipeline.addLast(new HeartBeatServerHandler());
+                            pipeline.addLast(new com.tuling.netty.heartbeat.HeartBeatServerHandler());
                         }
                     });
             System.out.println("netty server start。。");

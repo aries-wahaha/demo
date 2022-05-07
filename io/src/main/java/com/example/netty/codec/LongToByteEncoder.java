@@ -1,4 +1,4 @@
-package com.tuling.netty.codec;
+package com.example.netty.codec;
 
 import io.netty.buffer.ByteBuf;
 import io.netty.channel.ChannelHandlerContext;

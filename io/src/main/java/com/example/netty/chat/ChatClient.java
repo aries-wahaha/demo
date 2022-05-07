@@ -1,4 +1,4 @@
-package com.tuling.netty.chat;
+package com.example.netty.chat;
 
 import io.netty.bootstrap.Bootstrap;
 import io.netty.channel.*;
@@ -24,7 +24,7 @@ public class ChatClient {
                             pipeline.addLast(new StringEncoder());
                             pipeline.addLast(new StringDecoder());
 
-                            pipeline.addLast(new ChatClientHandler());
+                            pipeline.addLast(new com.tuling.netty.chat.ChatClientHandler());
                         }
                     });
             ChannelFuture channelFuture = bootstrap.connect("127.0.0.1", 9000).sync();

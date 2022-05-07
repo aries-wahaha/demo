@@ -1,4 +1,4 @@
-package com.tuling.netty.codec;
+package com.example.netty.codec;
 
 import io.netty.bootstrap.Bootstrap;
 import io.netty.channel.ChannelFuture;

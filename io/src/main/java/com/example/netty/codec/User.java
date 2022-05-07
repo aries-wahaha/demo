@@ -1,4 +1,4 @@
-package com.tuling.netty.codec;
+package com.example.netty.codec;
 
 import java.io.Serializable;
 
